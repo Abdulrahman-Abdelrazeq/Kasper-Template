@@ -1,0 +1,27 @@
+
+/* function add_commas_and_underscore(num) {
+    if (num.toString().length > 3) {
+        return console.log(num)
+    }
+}
+add_commas_and_underscore(12069057014032) */
+
+/* let n = "4566545654"
+let f = n.split("").reverse().join("")
+//console.log(n.toString().split("").reverse())
+let arrs = f.match(/\d{1,3}/g)
+let shifts = arrs.shift()
+
+console.log(arrs.reverse().join(","))
+console.log(shifts)
+ */
+
+
+
+
+
+function validateUsr(username) {
+    res =  (/[a-zA-z0-9_]{5,16}/).test(username) 
+    return res
+}
+console.log(validateUsr('asd434 34'))
